@@ -1,0 +1,58 @@
+/* Buttons */
+.btn-primary {
+    background: var(--color-white);
+    color: var(--color-primary);
+    border: 2px solid var(--color-white);
+    box-shadow: 0 .75rem .75rem rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    font-size: 1.4rem;
+    border-radius: 24px;
+    padding: 1.25rem 2rem;
+    cursor: pointer;
+    transition: .3s ease all;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--color-white);
+}
+
+.btn-secondary {
+    background: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 .75rem .75rem rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    font-size: 1.4rem;
+    border-radius: 24px;
+    padding: 1.25rem 2rem;
+    cursor: pointer;
+    transition: .3s all;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
+.btn-secondary {
+    background: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 .75rem .75rem rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    font-size: 1.4rem;
+    border-radius: 24px;
+    padding: 1.25rem 2rem;
+    cursor: pointer;
+    transition: .3s all;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+}

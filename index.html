@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Champion Mobile Auto Spa In Texas. Car Washing Mobile">
+    <meta name="keywords" content="Champion, Mobile, Mobile Auto Spa, Car Washing, Car, Texas">
+    <meta name="author" content="Champion Mobile Auto Spa">
+    <title>Champion Auto Spa</title>
+    <!-- Google Fonts -->
+        <!-- Montserrat Alternative -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-box">
+                <div class="header-text">
+                    <h1 class="primary-heading-white margin-bottom-4">The New Mobile. Coming To You.</h1>
+                    <!-- <p class="primary-text-white margin-bottom-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum repudiandae soluta nam debitis harum quibusdam?</p> -->
+                    <div class="header-button margin-bottom-2 margin-top-2">
+                        <a href="#Contact" class="btn-secondary">Book Now</a>
+                    </div>
+                </div>
+                <div class="header-image">
+                    <img src="img/Champ-Logo.png" alt="header image">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/championautospa-logo.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">list</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="#index.html">Home</a>
+                <a class="nav__link" href="#about">About</a>
+                <a class="nav__link" href="#pricing">Pricing</a>
+                <a class="nav__link" href="#gallery">Gallery</a>
+                <a class="nav__link" href="#testimonials">Testimonials</a>
+                <a class="btn-secondary" href="#Contact">Book Now</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1)
+            }, {
+                threshold: 1
+            });
+            
+            observer.observe(document.querySelector(".header"));
+        });
+        </script>
+
+<!-- About Section -->
+<section class="about padding-top-10 padding-bottom-10" id="about">
+    <div class="container">
+        <div class="about-box">
+            <div class="about-text">
+            <h2 class="primary-heading-accent margin-bottom-2">Champion Mobile Auto Spa</h2>
+            <p class="primary-text-grey margin-bottom-4">Champion Mobile Auto Spa uses premium professional grade car care products to help revitalize and restore your vehicle.</p>
+            <div class="about-image">
+                <img src="img/car-wash-3960877_1920.jpg" alt="car image">
+            </div>
+            </div>
+            <div class="about-items">
+                <div class="about-card">
+                    <div class="about-icon margin-bottom-2">
+                        <i class="material-icons">water_drop</i>
+                    </div>
+                    <h4 class="tertiary-heading-primary margin-bottom-1">Customer Service</h4>
+                    <p class="primary-text-grey margin-bottom-1">Always tailored to your professional needs.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon margin-bottom-2">
+                        <i class="material-icons">local_shipping</i>
+                    </div>
+                    <h4 class="tertiary-heading-primary margin-bottom-1">Quality Products</h4>
+                    <p class="primary-text-grey margin-bottom-1">We only use high quality and premium products.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon margin-bottom-2">
+                        <i class="material-icons">local_shipping</i>
+                    </div>
+                    <h4 class="tertiary-heading-primary margin-bottom-1">Mobile Detail</h4>
+                    <p class="primary-text-grey margin-bottom-1">Being mobile and convenient is our first priority.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon margin-bottom-2">
+                        <i class="material-icons">water_drop</i>
+                    </div>
+                    <h4 class="tertiary-heading-primary margin-bottom-1">Affordable</h4>
+                    <p class="primary-text-grey margin-bottom-1">We pride ourselves in being extremely affordable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Banner Section -->
+<section class="banner padding-bottom-8 padding-top-8" id="banner">
+    <div class="container">
+        <div class="banner-box">
+            <div class="banner-text">
+                <h1 class="primary-heading-white margin-bottom-4">Book Your First Car Wash Now!</h1>
+                <p class="primary-text-white margin-bottom-4">We specialize in car washing, waxing, and interior cleaning. We also provide headlight restoration, engine cleaning and more. We have 3 simple packages to chose from and we also offer add on services.</p>
+                <div class="banner-button margin-bottom-2 margin-top-2">
+                    <a href="#" class="btn-primary">Contact Us</a>
+                </div>
+            </div>
+            <div class="banner-image">
+                <img src="img/car-2176951_1920.jpg" alt="banner image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Showcase Section -->
+<section class="showcase padding-top-8 padding-bottom-8" id="showcase">
+    <div class="container">
+        <div class="showcase-box">
+            <div class="showcase-box1 margin-bottom-8">
+                <div class="showcase-image">
+                    <img src="img/brad-starkey-eP8h7YVhFHk-unsplash.jpg" alt="image">
+                </div>
+                <div class="showcase-text">
+                    <h2 class="secondary-heading-accent margin-bottom-2">Building Champions</h2>
+                <p class="primary-text-grey margin-bottom-4">Champion Mobile Auto Spa is Texas based and family owned and we offer an affordable, high quality mobile car wash at your home, office or where you play. Our mobile vehicles are equipped with water, electricity and premium professional grade car care products used to ensure the highest quality hand car wash.</p>
+                <div class="showcase-button">
+                    <a href="#pricing" class="btn-secondary">View Packages</a>
+                </div>
+                </div>
+            </div>
+            <div class="showcase-box2">
+                <div class="showcase-image">
+                    <img src="img/car-2220033_1920.jpg" alt="image">
+                </div>
+                <div class="showcase-text">
+                    <h2 class="secondary-heading-accent margin-bottom-2">The Best At What We Do</h2>
+                <p class="primary-text-grey margin-bottom-4">We care and we love what we do!.  We have over 20  years of experience in the auto detailing industry. A pristine vehicle and  customer service is our priority.  We are licensed, bonded and insured and we are a member the International Detailing Association.</p>
+                <div class="showcase-button">
+                    <a href="#pricing" class="btn-secondary">View Packages</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing padding-top-8 padding-bottom-6" id="pricing">
+    <div class="container">
+        <h4 class="tertiary-heading-primary margin-bottom-2">Our Pricing</h4>
+        <h2 class="primary-heading-accent margin-bottom-6">Choose The Best Package For You</h2>
+        <div class="pricing-box padding-bottom-8">
+
+            <div class="pricing-card p-card1">
+                <div class="pricing-text">
+                    <h3 class="secondary-heading-white margin-top-4 margin-bottom-2">The “One Two” Punch! | $40.00</h3>
+                    <ul>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Hand Wash Exterior</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Wipe Down Dash & Console</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Clean & Dress Tires & Wheels</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Clean Windows</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Clean Door Jams</li>
+                        <li class="primary-text-white margin-bottom-4"><span>&#9745;</span> Thoroughly Vacuum Interior</li>
+                    </ul>
+                    <div class="pricing-button margin-bottom-4">
+                        <a href="#Contact" class="btn-secondary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-card p-card2">
+                <div class="pricing-text">
+                    <h3 class="secondary-heading-white margin-top-4 margin-bottom-2">The “Contender” | $80.00</h3>
+                    <ul>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Hand Wash Exterior</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Champ Polish</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Clean Door Jams & Seals</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Clean Air Vents</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Clean All Windows</li>
+                        <li class="primary-text-white margin-bottom-4"><span>&#9745;</span> Thoroughly Vacuum Interior</li>
+                    </ul>
+                    <div class="pricing-button margin-bottom-4">
+                        <a href="#Contact" class="btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-card p-card3">
+                <div class="pricing-text">
+                    <h3 class="secondary-heading-white margin-top-4 margin-bottom-2">The “Knock Out” Punch | $120.00</h3>
+                    <ul>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Hand Wash Exterior</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Champ Prep Paint Protection</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Clean Door Jams & Seals</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Clean & Protect Glass</li>
+                        <li class="primary-text-white margin-bottom-1"><span>&#9745;</span> Clean Air Vents</li>
+                        <li class="primary-text-white margin-bottom-4"><span>&#9745;</span> Thoroughly Vacuum Interior</li>
+                    </ul>
+                    <div class="pricing-button margin-bottom-4">
+                        <a href="#Contact" class="btn-secondary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-card p-card4">
+                <div class="pricing-text">
+                    <h3 class="secondary-heading-accent margin-top-4 margin-bottom-2">“Stick and Move” | Quote</h3>
+                    <ul>
+                        <li class="primary-text-grey margin-bottom-1"><span>&#9745;</span> Headliner Cleaning – $60+</li>
+                        <li class="primary-text-grey margin-bottom-1"><span>&#9745;</span> Car Deodorizer – $30+</li>
+                        <li class="primary-text-grey margin-bottom-1"><span>&#9745;</span> Headlight Restoration – $60+</li>
+                        <li class="primary-text-grey margin-bottom-1"><span>&#9745;</span> Carpet Shampoo: $100+</li>
+                        <li class="primary-text-grey margin-bottom-1"><span>&#9745;</span> Chrome Clean & Polish: $40+</li>
+                        <li class="primary-text-grey margin-bottom-4"><span>&#9745;</span> And More!</li>
+                    </ul>
+                    <div class="pricing-button margin-bottom-4">
+                        <a href="#Contact" class="btn-secondary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pricing-button-box padding-bottom-4">
+            <a href="#pricing-details-content" class="btn-secondary">View All Pricing Info</a>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery padding-top-8 padding-bottom-8" id="gallery">
+    <div class="container">
+        <h4 class="tertiary-heading-primary margin-bottom-2">Explore Gallery</h4>
+        <h2 class="primary-heading-accent margin-bottom-4">See The Detail!</h2>
+        <div class="gallery-box">
+            <div class="gallery-image-box1">
+                <div class="gallery-item1">
+                    <img src="img/car-2176951_1920.jpg" alt="">
+                </div>
+            </div>
+            <div class="gallery-image-box2">
+                <div class="gallery-item2">
+                    <img src="img/car-2176951_1920.jpg" alt="gallery image">
+                </div>
+                <div class="gallery-item2">
+                    <img src="img/car-2176951_1920.jpg" alt="gallery image">
+                </div>
+                <div class="gallery-item2">
+                    <img src="img/car-2176951_1920.jpg" alt="gallery image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials padding-top-10 padding-bottom-10" id="testimonials">
+    <div class="container">
+        <h4 class="tertiary-heading-primary margin-bottom-2">Testimonials</h4>
+        <h2 class="primary-heading-accent margin-bottom-6">What Our Clients Say</h2>
+        <div class="testimonials-box margin-top-2 margin-bottom-2">
+            <div class="testimonials-card1">
+                <p class="primary-text-grey margin-bottom-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos harum maiores.</p>
+                <h4 class="tertiary-heading-accent"><span class="tertiary-heading-primary">John Doe</span>, Co-Owner</h4>
+            </div>
+            <div class="testimonials-card2">
+                <p class="primary-text-grey margin-bottom-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos harum maiores.</p>
+                <h4 class="tertiary-heading-accent"><span class="tertiary-heading-primary">John Doe</span>, Co-Owner</h4>
+            </div>
+            <div class="testimonials-card1">
+                <p class="primary-text-grey margin-bottom-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos harum maiores.</p>
+                <h4 class="tertiary-heading-accent"><span class="tertiary-heading-primary">John Doe</span>, Co-Owner</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer padding-top-8 padding-bottom-8" id="footer">
+    <div class="container">
+        <div class="footer-container">
+            <!-- Contact Box -->
+            <div class="footer-contact" id="Contact">
+                <h3 class="secondary-heading-accent margin-bottom-2">Contact Us</h3>
+                <form action="">
+                    <div class="contact-item">
+                        <h5 class="primary-text-grey margin-bottom-2">Name*</h5>
+                        <input type="text" name="First Name" id="" class="input" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5 class="primary-text-grey margin-bottom-2">Phone Number*</h5>
+                        <input type="text" name="First Name" id="" class="input" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5 class="primary-text-grey margin-bottom-2">Email*</h5>
+                        <input type="text" name="First Name" id="" class="input" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5 class="primary-text-grey margin-bottom-2">Message*</h5>
+                        <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="contact-submit">
+                        <!-- <div class="contact-button">
+                            <a href="#">Submit</a>
+                        </div> -->
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+            <div class="footer-box">
+                <div class="footer-company">
+                    <img src="img/IDA-MemberSticker_2021.png" alt="logo image" class="margin-bottom-2">
+                    <!-- <p class="primary-text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dignissimos ex libero unde cum! Pariatur quia porro, tempora natus perferendis fugiat molestias excepturi ipsam soluta dolor illum, error repudiandae aliquid!</p> -->
+                </div>
+                <div class="footer-map">
+                    <h3 class="tertiary-heading-accent margin-bottom-2">Site Map</h3>
+                    <div class="footer-link"><a href="#header">Home</a></div>
+                    <div class="footer-link"><a href="#pricing">Pricing</a></div>
+                    <div class="footer-link"><a href="#logos">Portfolio</a></div>
+                    <div class="footer-link"><a href="#testimonials">Testimonials</a></div>
+                    <div class="footer-link"><a href="#footer">Contact</a></div>
+                </div>
+                <div class="footer-info">
+                    <h3 class="tertiary-heading-accent margin-top-2 margin-bottom-2">Contact Us</h3>
+                    <div class="footer-link"><a href="tel:206-293-0297">(214) - 293 - 4857</a></div>
+                    <div class="footer-link"><a href="mailto:geniuses@logo-genius.com">championmobileautospa@gmail.com</a></div>
+                </div>
+                <h3 class="tertiary-heading-accent margin-top-2 margin-bottom-2">Follow Us</h3>
+                <div class="footer-socials">
+                    
+                    <div class="footer-socials-item">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="footer-socials-item">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="footer-socials-item">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Copyright Section -->
+<section class="copyright padding-top-2 padding-bottom-2" id="copyright">
+    <p class="primary-text-accent">Copyright @ 2021 | All Rights Reserved By Champion Auto Spa</p>
+</section>
+
+<!-- --------------------- MODALS -------------------- -->
+<!-- Boiler Plate -->
+<!-- <div id="target-content">
+    <a href="#" class="close"></a>
+    <div id="target-inner">
+      <h2>Modal Heading</h2>
+      <p>Modal Content</p>
+    </div>
+  </div> -->
+
+<!-- Pricing Details Modal -->
+<div id="pricing-details-content">
+    <a href="#pricing" class="close"></a>
+    <div id="pricing-details-inner">
+      
+        <!-- Pricing Details Section -->
+        <section class="pricing-details padding-top-8 padding-bottom-8">
+            <div class="container">
+                <h4 class="tertiary-heading-primary margin-bottom-1">What We Offer</h4>
+                <h2 class="primary-heading-primary margin-bottom-4">Our Packages</h2>
+        
+                <h3 class="tertiary-heading-primary margin-bottom-2">The “One Two” Punch! | $40.00</h3>
+                <p class="primary-text-grey margin-bottom-4">
+                    Hand Wash Exterior <br>
+                    Wipe down dash & console <br>                   
+                    Clean and Dress Tires and Wheels <br>                   
+                    Clean Windows <br>                  
+                    Clean Door Jams <br>
+                    Thoroughly Vacuum Interior
+                    </p>
+        
+                <h3 class="tertiary-heading-primary margin-bottom-2">The “Contender” | $80.00</h3>
+                <p class="primary-text-grey margin-bottom-4">
+                    Hand Wash Exterior <br>
+                    Champ Polish & Paint Protection (1 Month Protection) <br>
+                    Clean Door Jams & Seals <br>
+                    Clean Air Vents <br>
+                    Clean Exterior & Interior Windows <br>
+                    Thoroughly Vacuum Interior <br>
+                    Wipe down and Condition Exterior plastic and trim <br>
+                    Wipe down and Condition Interior vinyl, dash, and center console <br>
+                    Steam cup holders <br>
+                    Clean and Degrease Tires and Rims then Dress Tires <br>
+                    Sanitize Interior for virus & germ protection <br>
+                    Premium Fragrance included
+                </p>
+
+                <h3 class="tertiary-heading-primary margin-bottom-2">The “Knock Out” Punch | $120.00</h3>
+                <p class="primary-text-grey margin-bottom-4">
+                    Hand Wash Exterior <br>
+                    Champ Prep Paint Protection <br>
+                    Clean Door Jams & Seals <br>             
+                    Clean and Protect glass <br>                 
+                    Clean Air Vents <br>             
+                    Thoroughly Vacuum Interior <br>                   
+                    Wipe down and condition Exterior plastic and trim <br>                  
+                    Wipe down and condition Interior leather, vinyl, dash, and center console <br>                  
+                    Steam Cup Holders & Ashtrays <br>                
+                    Degrease Clean and Dress Tires and Wheels <br>                  
+                    The “Champ” Carnauba Wax (6 Months) <br>                 
+                    Sanitize Interior for virus & germ protection <br>                
+                    Clean Floormats <br>               
+                    Premium Fragrance Included
+                    
+                </p>
+
+                <h3 class="tertiary-heading-primary margin-bottom-2">“Stick and Move” | OPTIONAL SERVICES</h3>
+                <p class="primary-text-grey margin-bottom-4">
+                    Starting at $25.00 and up - Depending on Vehicle Type/Size <br>
+                    Champ Prep Paint Protection - $25+ <br>                 
+                    2 Step Champ Ceramic Protection (1Year) - $200+ <br>                 
+                    K.O. Vehicle Sanitization – $30+ <br>                 
+                    Headliner Cleaning – $60+ <br>                  
+                    Headlight Restoration – $60+ <br>                 
+                    Car Deodorizer – $30+ <br>                  
+                    Engine Bay Cleaning – $50+ <br>                   
+                    *****Paint Correction – By estimate******Not added to Item Library <br>                 
+                    Carpet Shampoo: $100+ <br>                
+                    Interior Spot Clean: By Estimate <br>                
+                    Deep Leather Cleaning & Conditioner: $50+ <br>                  
+                    Clean And Scotch-Guard Fabric Seat: $65+ <br>                  
+                    Champ Protection Polish (1 Month): $35+ <br>                 
+                    Champ Carnauba Wax (6 Month): $50+ <br>               
+                    Premium Champ Fragrance $5
+                    (Hit'Em Hard Cherry, KO Berry, Main Event) <br>                    
+                    Chrome Clean & Polish: $40+
+                </p>
+        
+            </div>
+        </section>
+
+    </div>
+</div>
+<!-- Pricing Details Modal -->
+
+<!-- --------------------- MODALS -------------------- -->
+</body>
+</html>
