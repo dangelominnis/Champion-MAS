@@ -42,7 +42,7 @@ body {
 /* Header Section */
 .header {
     height: 100vh;
-    background-image: url(../img/cleaning-1837328_1920.jpg);
+    background-image: url(../img/240764732_103097525439913_5505458731909651347_n-1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,7 +55,7 @@ body {
     position: relative;
 }
 
-.header::before {
+/* .header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -64,7 +64,7 @@ body {
     width: 100%;
     z-index: -1;
     background: rgba(156, 186, 223, 0.5); 
-}
+} */
 
 .u-centered {
     width: 100%;
@@ -72,6 +72,10 @@ body {
     margin: 0 auto;
     padding: 16px;
     box-sizing: border-box;
+}
+
+.header img {
+    width: 200px;
 }
 
 .header-box {
@@ -95,6 +99,9 @@ body {
 
 .header-button .btn-secondary {
     font-size: 1.75rem;
+    position: absolute;
+    top: 87%;
+    left: 42%;
 }
 
 .header-image {
@@ -122,7 +129,7 @@ body {
 }
 
 .bar--bg {
-    background: rgba(138, 175, 221, 0.9);
+    background: var(--color-dark-grey);
 }
 
 .bar__content {
@@ -846,6 +853,13 @@ body {
         height: auto;
     }
 
+    .header-button .btn-secondary {
+        font-size: 3rem;
+        position: absolute;
+        top: 87%;
+        left: 32%;
+    }
+
     /* About Section */
     .about h2 {
         text-align: center;
@@ -934,6 +948,13 @@ body {
         width: 300px;
         height: auto;
         margin-bottom: 3.5rem;
+    }
+
+    .header-button .btn-secondary {
+        font-size: 2.5rem;
+        position: absolute;
+        top: 87%;
+        left: 30%;
     }
 
     /* About Section */
@@ -1028,6 +1049,9 @@ body {
 @media only screen and (max-width: 600px) {
 
     /* Header Section */
+    .header {
+        height: 60vh;
+    }
     .header-box {
         flex-direction: column-reverse;
     }
@@ -1054,8 +1078,20 @@ body {
         margin-bottom: 3.5rem;
     }
 
+    .header-button .btn-secondary {
+        font-size: 1.75rem;
+        position: absolute;
+        top: 87%;
+        left: 17%;
+    }
+
     .nav__link {
         color: var(--color-white);
+    }
+
+    .nav .btn-secondary {
+        margin-top: 1rem;
+        text-align: center;
     }
 
     /* About Section */
