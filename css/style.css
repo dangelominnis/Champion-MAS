@@ -836,6 +836,10 @@ body {
 
 /* Large devices (laptops/desktops, 1024px and down) */
 @media only screen and (max-width: 1024px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    
     /* Header Section */
     .header-textbox {
         display: inline;
@@ -942,7 +946,10 @@ body {
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-    
+    html {
+        scroll-behavior: smooth;
+    }
+
     /* Header Section */
     .header-image img {
         width: 300px;
@@ -1047,6 +1054,9 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    html {
+        scroll-behavior: smooth;
+    }
 
     /* Header Section */
     .header {
