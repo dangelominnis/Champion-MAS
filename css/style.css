@@ -150,7 +150,7 @@ body {
 }
 
 .bar__nav-toggle i {
-    color: var(--color-dark-grey);
+    color: var(--color-white);
     font-size: 4rem;
 }
 
