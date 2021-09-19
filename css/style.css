@@ -466,6 +466,10 @@ body {
     padding: 0 4rem;
 }
 
+.pricing-text h3 {
+    text-align: center;
+}
+
 .pricing-text li {
     list-style: none;
     font-size: 1.3rem;
