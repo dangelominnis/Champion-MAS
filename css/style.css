@@ -101,7 +101,7 @@ body {
     font-size: 1.75rem;
     position: absolute;
     top: 87%;
-    left: 42%;
+    left: 46%;
 }
 
 .header-image {
@@ -865,7 +865,7 @@ body {
         font-size: 3rem;
         position: absolute;
         top: 87%;
-        left: 32%;
+        left: 43%;
     }
 
     /* About Section */
@@ -965,7 +965,7 @@ body {
         font-size: 2.5rem;
         position: absolute;
         top: 87%;
-        left: 30%;
+        left: 42%;
     }
 
     /* About Section */
@@ -1064,7 +1064,7 @@ body {
 
     /* Header Section */
     .header {
-        height: 60vh;
+        height: 80vh;
     }
     .header-box {
         flex-direction: column-reverse;
@@ -1093,10 +1093,10 @@ body {
     }
 
     .header-button .btn-secondary {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         position: absolute;
         top: 87%;
-        left: 17%;
+        left: 36%;
     }
 
     .nav__link {
